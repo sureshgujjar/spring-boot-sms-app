@@ -21,8 +21,11 @@ public class StudentController
    {
 	   	super();
 	   	this.stuService=stuService;
-	   	
-	   	
+    }
+   @GetMapping("/error")
+   public String errorPage()
+   {
+	   return "error";
    }
    @GetMapping("/")
    public String rootPage(Model model)
